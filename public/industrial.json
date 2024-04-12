@@ -1,0 +1,76 @@
+[
+    {
+      "image": "https://www.amaresearch.co.uk/wp-content/uploads/2021/04/General-Ind-Prodrelated.jpg",
+      "estate_title": "Large Warehouse Complex",
+      "id": 1,
+      "segment_name": "Industrial",
+      "description": "Spacious warehouse complex suitable for storage and distribution purposes.",
+      "price": "$3,500,000",
+      "status": "sale",
+      "area": "150,000 sq ft",
+      "location": "Industrial Park",
+      "facilities": ["loading docks", "office space", "security system"]
+    },
+    {
+      "image": "https://www.ec-ma.com/wp-content/uploads/2018/11/industrial_market.jpg",
+      "estate_title": "Industrial Office Building",
+      "id": 2,
+      "segment_name": "Industrial",
+      "description": "Multi-storey office building designed for industrial businesses.",
+      "price": "$7,200,000",
+      "status": "sale",
+      "area": "250,000 sq ft",
+      "location": "Industrial District",
+      "facilities": ["conference rooms", "cafeteria", "parking"]
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP02NZ3Rg-LIv5M1a6qYXV75l-sKpgoTVRRY9sgJy-gVnK9_iVwazB-yaI4algj-6n2H0&usqp=CAU",
+      "estate_title": "Manufacturing Facility",
+      "id": 3,
+      "segment_name": "Industrial",
+      "description": "State-of-the-art manufacturing facility equipped with modern machinery.",
+      "price": "$10,000,000",
+      "status": "sale",
+      "area": "500,000 sq ft",
+      "location": "Industrial Zone",
+      "facilities": ["production lines", "research labs", "warehouse space"]
+    },
+    {
+      "image": "https://gomagcdn.ro/domains/sancogrup.ro/files/product/original/rapid-m3-rivet-nuts-diameter-3mm-internally-threaded-tubular-rivets-steel-with-chrome-finishing-including-hss-drill-bit-20-pcs-blister-5000670-3530-3359.jpg",
+      "estate_title": "Industrial Land Plot",
+      "id": 4,
+      "segment_name": "Industrial",
+      "description": "Vacant land plot suitable for industrial development.",
+      "price": "$2,500,000",
+      "status": "sale",
+      "area": "20 acres",
+      "location": "Industrial Outskirts",
+      "facilities": ["utilities available", "easy access to transportation"]
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxp0tLWam5vIsAN4ArixCgxjDuBdCRTRmxTY6pRRc2EcrcYZX_ksabJk9xaq25MFWbLpI&usqp=CAU",
+      "estate_title": "Industrial Park Building",
+      "id": 5,
+      "segment_name": "Industrial",
+      "description": "Commercial building within a designated industrial park.",
+      "price": "$5,800,000",
+      "status": "sale",
+      "area": "200,000 sq ft",
+      "location": "Industrial Park",
+      "facilities": ["office suites", "manufacturing space", "loading docks"]
+    },
+    {
+      "image": "https://zerowater.co.uk/cdn/shop/files/copperPipes573_large_0daf5f68-1514-4bfe-b8a2-65aa7f92aa59_800x.webp?v=1683317266",
+      "estate_title": "Warehouse Complex",
+      "id": 6,
+      "segment_name": "Industrial",
+      "description": "Warehouse complex with multiple units suitable for various industrial uses.",
+      "price": "$4,200,000",
+      "status": "sale",
+      "area": "180,000 sq ft",
+      "location": "Industrial Zone",
+      "facilities": ["storage space", "office areas", "truck access"]
+    }
+    
+  ]
+  
