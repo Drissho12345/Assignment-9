@@ -8,7 +8,7 @@ const CardDetails = () => {
     return (
         <div className="grid border mb-10 mt-5 rounded-2xl shadow lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-2">
             <div>
-               <img className="p-4  w-full h-96" src={image} alt="" />
+               <img className="p-4 md:w-full h-96" src={image} alt="" />
             </div>
             <div className="p-5">
                 <h1 className="text-2xl font-bold">{estate_title}</h1>

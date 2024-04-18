@@ -1,12 +1,16 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../Auth/AuthProvider";
 
 const Navber = () => {
     const links = <>
       <li className="text-[18px] text-[#23BE0A]"><NavLink to="">Home</NavLink></li>
       <li className="text-[18px] text-[#23BE0A]"><NavLink to="/About Us">About Us</NavLink></li>
-      <li className="text-[18px] text-[#23BE0A]"><NavLink to="/Contect">Contect</NavLink></li>
       <li className="text-[18px] text-[#23BE0A]"><NavLink to="/User">Update Profile</NavLink></li>
     </>
+
+const {user,logOut} = useContext(AuthContext)
+// console.log(user);
     return (
         <div className="navbar">
             <div className="navbar-start">
@@ -28,8 +32,16 @@ const Navber = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-2">
-                <a className="md:btn text-[12px] px-2 rounded py-1 text-[#fff] bg-[#23BE0A]">Sign In</a>
-                <a className="md:btn text-[12px] px-2 rounded py-1  bg-[#59C6D2] text-[#fff]">Sign Up</a>
+                <Link to={"/Login"}>
+                    {user ? <div className="flex gap-3">
+                    <div className="tooltip" data-tip={user.displayName}>
+                        <img className="border rounded-full w-[45px] h-[45px]" src={user.photoURL} />
+                    </div>
+                    <button onClick={ () => logOut()} className="btn btn-secondary">Log Out</button>
+                    </div> : 
+                    <a className="md:btn text-[12px] px-2 rounded py-1 text-[#fff] bg-[#23BE0A]">Login</a>}
+                   
+                </Link>
             </div>
         </div>
     );

@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Banner from './../Banner/Banner';
 import Cards from '../Cards/Cards';
+import OurTeam from '../Team/OurTeam';
 const Card = () => {
     // const biodata = useLoaderData();
     // const {id} = useParams();
@@ -33,6 +34,7 @@ const Card = () => {
                     books.map(data => <Cards key={data.id} data={data}></Cards>)
                 }
             </div>
+            <OurTeam></OurTeam>
             
         </div>
     );

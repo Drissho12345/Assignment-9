@@ -9,6 +9,15 @@ import ErrorPage from './Component/Error-page/ErrorPage'
 import Card from './Component/Card/Card'
 import CardDetails from './Component/Card Details/CardDetails'
 import UpdateProfile from './Component/Update profile/UpdateProfile'
+import Login from './Component/Login/Login'
+import Register from './Component/Register/Register';
+
+// toast
+  import { ToastContainer} from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+import AuthProvider from './Component/Auth/AuthProvider'
+import ProtectedRoute from './Component/Protected/ProtectedRoute'
+import AboutUs from './Component/About Us/AboutUs'
 
 
 const  router = createBrowserRouter([
@@ -22,13 +31,27 @@ const  router = createBrowserRouter([
         element: <Card></Card>,
       },
       {
+        path:"/About Us",
+        element: <AboutUs></AboutUs>,
+      },
+      {
         path:"/CardDetails/:id",
-        element: <CardDetails></CardDetails>,
+        element: <ProtectedRoute>
+            <CardDetails></CardDetails>
+        </ProtectedRoute>,
         loader: ()=>fetch("/industrial.json"),
       },
       {
         path:"/User",
         element: <UpdateProfile></UpdateProfile>
+      },
+      {
+        path:"/Login",
+        element:<Login></Login>,
+      },
+      {
+        path:"/Register",
+        element:<Register></Register>,
       }
     ],
   },
@@ -39,6 +62,9 @@ const  router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />,
+    <AuthProvider>
+        <RouterProvider router={router} />
+    </AuthProvider>,
+    <ToastContainer />,
   </React.StrictMode>,
 )
