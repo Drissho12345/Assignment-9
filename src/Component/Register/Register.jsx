@@ -4,8 +4,7 @@ import { useContext, useState } from "react";
 import { FiEye ,FiEyeOff} from "react-icons/fi";
 import { toast } from "react-toastify";
 import { AuthContext } from "../Auth/AuthProvider";
-import { updateProfile } from "firebase/auth";
-// import { sendEmailVerification } from "firebase/auth";
+import { sendEmailVerification } from "firebase/auth";
 
 const Register = () => {
 
@@ -44,19 +43,14 @@ const Register = () => {
         registerUser(email,password,text)
         .then(register =>{
             console.log(register.user);
-            // setSuccess('User created Successfully')
             toast.success("User created Successfully!");
-            updateProfile(register.user, {
-                displayName: name, 
-                photoURL: url
-              })
             setUser(register.user)
 
-            // // email verify
-            // sendEmailVerification(register.user)
-            // .then(() =>{
-            //     toast("Please check your email and verify your account")
-            // })
+            // email verify
+            sendEmailVerification(register.user)
+            .then(() =>{
+                toast("Please check your email and verify your account")
+            })
 
         })
         .catch(error =>{

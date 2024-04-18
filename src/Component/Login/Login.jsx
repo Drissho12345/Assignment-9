@@ -1,4 +1,4 @@
-import { Link, useLocation} from "react-router-dom";
+import { Link} from "react-router-dom";
 import { useState } from "react";
 import { FiEye ,FiEyeOff} from "react-icons/fi";
 import SocialLogin from "../Social/SocialLogin";
@@ -11,10 +11,6 @@ import { toast } from "react-toastify";
 const Login = () => {
     const [ showPassword ,setShowPassword] = useState(false)
     const {loginUser} = useContext(AuthContext)
-
-    const location = useLocation()
-    console.log(location);
-
     
 
     const handleLogin = (e) => {
