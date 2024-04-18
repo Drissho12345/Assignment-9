@@ -121,7 +121,6 @@ const Register = () => {
                 
                     <p className="mt-2"> Have an account? Please <Link to={"/login"} className="font-bold">Login</Link></p>
                 </form>
-<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facere accusantium iure harum soluta hic excepturi molestiae eos maxime earum, consequatur rem eius corporis facilis mollitia ab aspernatur saepe optio.</div>
             </div>
         </div>
     );
