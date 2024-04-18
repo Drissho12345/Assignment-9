@@ -5,7 +5,7 @@ import { FiEye ,FiEyeOff} from "react-icons/fi";
 import { toast } from "react-toastify";
 import { AuthContext } from "../Auth/AuthProvider";
 import { updateProfile } from "firebase/auth";
-// import { sendEmailVerification, updateProfile } from "firebase/auth";
+// import { sendEmailVerification } from "firebase/auth";
 
 const Register = () => {
 
@@ -56,15 +56,6 @@ const Register = () => {
             // sendEmailVerification(register.user)
             // .then(() =>{
             //     toast("Please check your email and verify your account")
-            // })
-
-            // // update profile
-            // updateProfile(register.user,{
-            //     displayName: text,
-            //     photoURL: url,
-            // })
-            // .then(()=>{
-            //     toast("profile update")
             // })
 
         })

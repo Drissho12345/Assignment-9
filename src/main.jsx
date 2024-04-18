@@ -16,7 +16,6 @@ import Register from './Component/Register/Register';
   import { ToastContainer} from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import AuthProvider from './Component/Auth/AuthProvider'
-import ProtectedRoute from './Component/Protected/ProtectedRoute'
 import AboutUs from './Component/About Us/AboutUs'
 
 
@@ -36,9 +35,7 @@ const  router = createBrowserRouter([
       },
       {
         path:"/CardDetails/:id",
-        element: <ProtectedRoute>
-            <CardDetails></CardDetails>
-        </ProtectedRoute>,
+        element: <CardDetails></CardDetails>,
         loader: ()=>fetch("/industrial.json"),
       },
       {
