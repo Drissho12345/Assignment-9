@@ -9,7 +9,7 @@ import { sendEmailVerification } from "firebase/auth";
 const Register = () => {
 
     const {registerUser,setUser} = useContext(AuthContext)
-    
+
     const [ showPassword ,setShowPassword] = useState()
     const [show , setShow] = useState()
     const handleRegister = (e) => {
@@ -121,6 +121,9 @@ const Register = () => {
                 
                     <p className="mt-2"> Have an account? Please <Link to={"/login"} className="font-bold">Login</Link></p>
                 </form>
+
+<h1></h1>
+
             </div>
         </div>
     );
